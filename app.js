@@ -1,6 +1,8 @@
 //Created by Grace Garrand
 //2-3-2023 (Yay...my bday!)
 
+let text1 = "This girl wears a blank shirt";
+
 
 function changeImage() {
     let displayImage = document.getElementById('image1')
@@ -11,17 +13,30 @@ function changeImage() {
     }
 }
 function msgText() {
-    alert("Click on the picture to see the girl start to disinagrate!")
+    alert("Click on the picture to see the girl start to disintegrate!")
 }
 
+const girl = {
+ hairType:'curly hair,',
+ shirtType:'a striped shirt,',
+ pantType:'blue jeans' ,
+ nailColor:'black nail polish.',
+};
 
-const girl = {hairType:'curly',
- shirtType:'striped',
- pantType:'jeans' ,
- nailColor:'black',
- fullDescript: function() { 
-    return this.hairType + " " + this.shirtType;
-}};
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML; 
+  document.getElementById("demo").innerHTML =
+  text.replace("blank", "striped");
+} 
 
-fullDescript()
+
+document.getElementById("demo").innerHTML= text1;
+document.getElementById("demo1").innerHTML = 'This girl is sporting' + " " + girl.hairType +
+ " " + girl.shirtType + " "+ girl.pantType + " " + 'and' + " "+ girl.nailColor;
+
+ console.log(myFunction)
+ console.log(msgText)
+ console.log(changeImage)
+ console.log(girl)
+ console.log(text1)
 msgText()
