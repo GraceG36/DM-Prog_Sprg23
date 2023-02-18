@@ -1,6 +1,5 @@
 // Created by Grace Garrand
 
-
 // Changing the look w/ HTML Dom
 
 const text = document.querySelector('.changeP');
