@@ -1,3 +1,4 @@
+/* Created by Grace Garrand */
 body {
     color: rgb(41, 65, 66);
     text-decoration: none;
@@ -5,7 +6,20 @@ body {
     text-align: center;
 }
 
+.header2 {
+    color: indigo;
+}
+
 .change1 {
     font-size: x-large;
     border: solid 5px grey;
+}
+
+input , .additionalLi {
+    height: 2rem;
+    width: 15rem;
+}
+p {
+    text-align: center;
+    margin: 2rem;
 }

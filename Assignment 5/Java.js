@@ -1,3 +1,5 @@
+// Created by Grace Garrand
+
 
 // Changing the look w/ HTML Dom
 
@@ -28,3 +30,16 @@ additionalLi.addEventListener('click', function(){
     addLi.appendChild(liContent);
     userList.appendChild(addLi);
 });
+
+// Items for bedtime (Used while statement)
+const bedItems = ["Toothbrush", "Pillow","Pj's","Blankets","Diffuser",
+"Water", "Slippers", "A book"];
+
+let i = 0;
+let item = "";
+while (bedItems[i]) {
+    item += bedItems[i] + "<br>";
+    i++;
+}
+
+document.getElementById("bedItem").innerHTML = item;
