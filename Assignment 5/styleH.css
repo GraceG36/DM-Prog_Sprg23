@@ -5,6 +5,10 @@ body {
     background-color: oldlace;
     text-align: center;
 }
+#blue {
+    color: blue;
+    font-size: x-large;
+}
 
 .header2 {
     color: rgb(19, 155, 128);
