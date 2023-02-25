@@ -1,0 +1,17 @@
+img {
+    width: 400px;
+    height: 260px;
+}
+
+body {
+    text-align: center;
+}
+h1 {
+    color: darkgoldenrod;
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+}
