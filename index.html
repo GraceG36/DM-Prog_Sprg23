@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style1.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Rock paper and scissors</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <div>
-    <h1 id="Warning">STILL UNDER CONSTRUCTION</h1>
-    <h1>Pottery Steps</h1>
-    <img id="img1"src="Pics/Pot1.jpg" alt=""> <br> 
-    <button id="picToggle">Click me!</button>
+    
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+            <h2>Player</h2>
+            <p>0</p>    
+        </div>
+        <div class="computerscore">
+            <h2>Computer</h2>
+            <p>0</p>
+        </div>
     </div>
 
-    <div>
-        <h2>What does it take to create pottery?</h2>
-        <p id="test"></p>
-        <p>This value was taken from an object</p>
-    </div>
+        <div class="intro">
+            <h1>Rock Paper and Scissors</h1>
+            <button>Let's Play</button>
+        </div>
 
-    <div id="arraysSection">
-    <h2>An Array</h2>
-    <p id="tools"></p>
-    <h2>A single Array</h2>
-    <p id="singleTool"></p>
-    <h2>Adding an item to an array</h2>
-    <p id="addedItem"></p>
-    </div>
+        <div class="match fadeOut">
+            <h2 class="winner">Choose and option</h2>
+            <div class="hands">
+                <img class="player-hand" src="/assets/rock.png" alt="">
+                <img class="computer-hand" src="/assets/rock.png" alt="">
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+        </div>
+</section>
+
     <script src="app.js"></script>
 </body>
 </html>
