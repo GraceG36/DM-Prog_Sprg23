@@ -38,48 +38,48 @@ const game = ()=> {
     };
 
     const compareHands = (playerChoice, computerChoice) =>{
-        const winner = document.querySelector('.winner');
+        const winner = document.querySelector(".winner");
+
         if(playerChoice === computerChoice){
-            winner.textContent = 'It is a tie';
+            winner.textContent = "It is a tie";
             return;
         }
     
         //check for rock
-        if(playerChoice === 'rock'){
-            if(computerChoice === 'scissors'){
-                winner.textContent = 'Player Wins'
+        if(playerChoice === "rock"){
+            if(computerChoice === "scissors"){
+                winner.textContent = "Player Wins"
                 return;
             }else{
-                winner.textContent = 'Computer Wins';
+                winner.textContent = "Computer Wins";
                 return;
             }
         }
             //Check for paper
-        if(playerChoice === 'paper'){
-            if(computerChoice === 'scissors'){
-                winner.textContent = 'Computer Wins'
+        if(playerChoice === "paper"){
+            if(computerChoice === "scissors"){
+                winner.textContent = "Computer Wins"
                 return;
             }else{
-                winner.textContent = 'Player Wins';
+                winner.textContent = "Player Wins";
                 return;
             }
         }
             //check for scissors
-        if(playerChoice === 'scissors'){
-            if(computerChoice === 'rock'){
-                winner.textContent = 'Computer Wins'
+        if(playerChoice === "scissors"){
+            if(computerChoice === "rock"){
+                winner.textContent = "Computer Wins"
                 return;
             }else{
-                winner.textContent = 'Player Wins';
+                winner.textContent = "Player Wins";
                 return;
             }
         }
-      
-
     };
+
     //Check for Paper
     startGame();
-    updateScore();
+    //updateScore();
     playMatch();
         
     };
