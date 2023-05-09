@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
     <title>Document</title>
-    <link rel="stylesheet" href="styleF.css">
 </head>
 <body>
-    <section class="blnk"></section>
-    <section class="1st">
-        <div class="emoji closed active">🙈</div>
-        <div class="emoji open">🙉</div>
-    </section>
-    <section class="2nd">
-        <h1>Options</h1>
-        <div id="info"></div> 
-    </section>
-    <section class="3rd">
-        <div id="circle">Hover</div>
-    </section>
+<div id="myDIV" class="header">
+    <h2>To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span class="addBtn" onclick="newElement()" >Add</span>
+</div>
 
-    <script src="app.js"></script>
+<ul id="myUL">
+<li>List Item</li>
+<li class="checked">List Item</li>
+<li>List Item</li>
+<li>List Item</li>
+<li>List Item</li>
+<li>List Item</li>
+<li>List Item</li>
+</ul>
+    
+    <script src="app.js">
+    </script>
 </body>
 </html>

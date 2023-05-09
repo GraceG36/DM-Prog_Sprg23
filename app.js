@@ -1,55 +1,51 @@
-//Monkey Face Section
-const closedFace = document.querySelector('.closed')
-const openFace = document.querySelector('.open')
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+}
 
-//add event listener
-
-closedFace.addEventListener('click',() => {
-    if(openFace.classList.contains('open')) {
-        openFace.classList.add('active');
-        closedFace.classList.remove('active');
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
     }
-});
+}
 
-openFace.addEventListener('click', () => {
-    if(closedFace.classList.contains('closed')){
-        closedFace.classList.add('active');
-        openFace.classList.remove('active');
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
     }
-});
+}, false);
 
-//Multiple Choice section
-
-let data = [
-    {name: 'John', age: '34'},
-    {name: 'Lucy', age: '19'},
-    {name: 'George', age: '53'},
-    {name: 'Stephan',age: '24'},
-    {name: 'Karlah',age: '43'},
-    {name: 'Cindy',age: '30'}
-
-];
-
-const info = document.querySelector('#info');
-
-let details = data.map(function(item) {
-    return '<div>' + item.name + ' ' + 'is ' + item.age + ' years old' + '</div>';
-    
-});
-
-info.innerHTML = details.join('\n');
-
-//Hover Section
-const circle = document.querySelector('#circle')
-
-circle.addEventListener('mouseenter', () => {
-    if(!circle.classList.contains('hover')) {
-        circle.classList.add('hover');
+function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+        alert("Please input value");
+    } else{
+        document.getElementById("myUL").appendChild(li);
     }
-});
+    document.getElementById("myInput").value = "";
 
-circle.addEventListener('mouseleave', () => {
-    if(circle.classList.contains('hover')){
-        circle.classList.remove('hover');
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00d7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
     }
-})
+}
