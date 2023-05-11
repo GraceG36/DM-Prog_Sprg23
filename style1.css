@@ -1,6 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Ultra&display=swap');
+
 *{
     box-sizing: border-box;
 }
+
+#para {
+    display: none;
+}
+
+section {
+    align-items: center;
+    margin: 4rem;
+    height: fit-content;
+    
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template: 1fr/ 1fr 1fr;
+    background-color: #daded4;
+}
+
+p {
+    font-family: 'Ultra, serif';
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Holtwood One SC', serif;;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.spacer {
+    padding: 2rem;
+}
+
+/*Intro*/
+.Intro {
+    text-align: center;
+    align-content: center;
+}
+
+/*Clock CCS*/
+
+div#myClock {
+    border-radius: 20px/20px;
+    box-shadow: 10px 5px 5px grey;
+    padding: 1.5rem;
+    margin: 2rem;
+    width: auto;
+}
+
+#myClock {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 58px;
+    color: #04eea4ec;
+    text-align: center;
+    background-color: #05023ee5;
+   
+
+}
+
+/*To Do List*/
 
 ul {
     margin: 0;
@@ -22,6 +86,11 @@ ul li {
     user-select: none;
 }
 
+
+ul li {
+    list-style: none;
+}
+
 ul li:nth-child(odd) {
     background: #f9f9f9;
 }
@@ -31,7 +100,7 @@ ul li:hover {
 }
 
 ul li.checked {
-    background: #888;
+    background: #55402ee5;
     color:#fff;
     text-decoration: line-through;
 }
@@ -47,6 +116,8 @@ ul li.checked::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+    list-style-type: none;
+    
 }
 
 .close {
@@ -57,16 +128,34 @@ ul li.checked::before {
 }
 
 .close:hover {
-    background-color: #f44336;
+    background-color: #fb1e0e;
     color: white;
 }
 
+#IntroHov {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 550px;
+    background: #2c954a;
+    border-radius: 15px/15px;
+    font-size: 1.5rem;
+    color:black;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.hoverBtn {
+    transform: scale(1.1);
+}
+
 .header {
-    background-color: #f44336;
+    display: block;
+    background-color: #2c954a;
     padding: 30px 40px;
     color: white;
     text-align: center;
-    font-size: 20px;
 }
 
 .header:after {
@@ -99,5 +188,6 @@ input {
 }
 
 .addBtn:hover {
-    background-color: #bbb;
+    background-color: #55402ee5;
+    color: #eee;
 }
